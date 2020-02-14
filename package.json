@@ -1,0 +1,14 @@
+{
+  "name": "cljs-tutorial",
+  "version": "1.0.0",
+  "description": "first go at a clojure project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aubrey Snider",
+  "license": "MIT",
+  "dependencies": {
+    "source-map-support": "^0.5.16"
+  }
+}
