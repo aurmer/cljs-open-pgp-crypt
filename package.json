@@ -1,7 +1,7 @@
 {
   "name": "secure-msg",
   "version": "1.0.0",
-  "description": "A Clojure library designed to ... well, that part is up to you.",
+  "description": "Message encrypter/decrypter in Clojurescript.",
   "main": "index.js",
   "directories": {
     "doc": "doc",
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "4.17.1",
+    "source-map-support": "^0.5.16"
   }
 }
