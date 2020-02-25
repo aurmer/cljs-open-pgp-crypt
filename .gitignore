@@ -2,3 +2,5 @@ out
 node_modules
 .cpcache
 cljs.jar
+target
+resources/public/javascripts
