@@ -1,15 +1,13 @@
 (ns secureMsg.core
-  (:require [reagent.core :as reagent]))
+  (:require [reagent.core :as reagent]
+            [secureMsg.title :refer (header)]))
 
 (def app-state
   (reagent/atom
     {:message "Hello from App State!"}))
 
 (defn app []
-  [:h1 (:message @app-state)])
+  [:div {:class "container"}
+   [header (:message @app-state)]])
 
 (reagent/render [app] (js/document.querySelector "#root"))
-
-(js/setTimeout
-  (fn [] (swap! app-state assoc-in [:message] "New Message..."))
-  2000)
