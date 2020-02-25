@@ -9,3 +9,7 @@
   [:h1 (:message @app-state)])
 
 (reagent/render [app] (js/document.querySelector "#root"))
+
+(js/setTimeout
+  (fn [] (swap! app-state assoc-in [:message] "New Message..."))
+  2000)
